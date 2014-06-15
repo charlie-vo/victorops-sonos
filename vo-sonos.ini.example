@@ -1,0 +1,31 @@
+#-------------------------------------------------
+# Settings for the vo-sonos-alerts.py application
+#-------------------------------------------------
+[vo-sonos-alerts]
+sonosPlayer=Living Room
+
+listenPort=5000
+
+# Point this at the URL of the alert sound you want to play
+alertSoundURL=http://www.mycompany.com/alertsound.mp3
+
+# This is your webhook URL as you entered on your VictorOps
+# outgoing alert webhook page.  It must be reachable from
+# VictorOps' servers.
+alertWebhookURLRoot=http://something.mycompany.com
+
+# This key is also shown on your VictorOps outgoing alert webhook
+# page.  It is generated when you create your webhook
+alertWebhookAuthKey=EqFAy7H-oAcEilwjUnFFj~bxaLzVb46Szz9b
+
+#-------------------------------------------------
+# Settings for the vo-sonos-now-playing.py application
+#-------------------------------------------------
+[vo-sonos-now-playing]
+sonosPlayer=Living Room
+pollInterval=5
+
+# This API key is a component of the URL shown on your VictorOps
+# REST Endpoint integration settings page.
+apiKey=fb376d44-f40a-11e3-8a77-6f299ae1d59a
+routingKey=everyone
