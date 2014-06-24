@@ -34,7 +34,7 @@ This application runs a micro web server and accepts calls from the VictorOps ou
 webhook.  Whenever a notification is sent for an incident in your VictorOps account, the webhook
 will be invoked, and your Sonos system will play the alert track of your choice.
 
-As with all VictorOps alerting policies, you have fine grained control over which notifications are
+As with all VictorOps alerting policies, you have fine-grained control over which notifications are
 sent to your Sonos.
 
 To enable the VictorOps webhook notification for your account, go to your account's Integration Settings.  Click Outgoing
@@ -44,5 +44,3 @@ application.
 
 [More about the VictorOps notification webhook](http://victorops.force.com/knowledgebase/articles/Getting_Started/WebHooks/)
 
-*Known issue: Resuming works when playing from a queue or radio station, but resuming playback from Pandora (and other
-services?) does not work properly.*

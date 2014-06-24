@@ -124,6 +124,11 @@ else:
         trackPos = track['position']
         trackURI = track['uri']
 
+        # This information allows us to resume services like Pandora
+        mediaInfo = sonos.avTransport.GetMediaInfo([('InstanceID', 0)])
+        mediaURI = mediaInfo['CurrentURI']
+        mediaMeta = mediaInfo['CurrentURIMetaData']
+
         # Play the alert sound, and sleep to allow it to play through
         print 'Playing alert %s' % alertSoundURL
         sonos.play_uri(alertSoundURL)
@@ -137,8 +142,8 @@ else:
             sonos.play_from_queue(playlistPos)
             sonos.seek(trackPos)
         else:
-            print 'Resuming %s' % trackURI
-            sonos.play_uri(trackURI)
+            print 'Resuming %s' % mediaURI
+            sonos.play_uri(mediaURI, mediaMeta)
 
         return "OK"
 

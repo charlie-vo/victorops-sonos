@@ -41,3 +41,5 @@ else:
     print sonos.get_current_transport_info()
     print 'Track info:'
     print sonos.get_current_track_info()
+    print 'Media info:'
+    print sonos.avTransport.GetMediaInfo([('InstanceID', 0)])
