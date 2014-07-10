@@ -40,7 +40,7 @@ sent to your Sonos.
 To enable the VictorOps webhook notification for your account, go to your account's Integration Settings.  Click Outgoing
 Notifications Webhooks and add one for the Sonos Alert application.  The URL will be whatever address will reach the alert
 application when you run it.  Copy the URL and generated Auth Code into the configuration file for the Sonos Alert
-application.
+application.  You may find [ngrok](https://ngrok.com/) useful for making the alert application available outside your firewall.
 
 [More about the VictorOps notification webhook](http://victorops.force.com/knowledgebase/articles/Getting_Started/WebHooks/)
 
